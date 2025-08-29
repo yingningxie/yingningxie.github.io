@@ -32,3 +32,11 @@
 "planck":
   - firstname: ["Max"]
     url: https://en.wikipedia.org/wiki/Max_Planck
+
+#"noland":
+  #- firstname: ["Robert", "R."]
+    #url: https://bloustein.rutgers.edu/people/noland
+
+#"smart":
+  #- firstname: ["Michael", "M."]
+    #url: https://bloustein.rutgers.edu/people/smart

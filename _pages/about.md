@@ -27,10 +27,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi, I am Ningning - a `doctoral candidate` at the [Edward J. Bloustein School of Planning and Public Policy](https://bloustein.rutgers.edu) at Rutgers University.
+Hi, I am Ningning - a `doctoral candidate` at the [Edward J. Bloustein School of Planning and Public Policy](https://bloustein.rutgers.edu), Rutgers University in New Brunswick. I am currently working on my dissertation titled *"E-Cycling for Well-Being: Potential, Realized, and Perceived Accessibility of E-Bike Users in the United States."*
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I have conducted research in China, India, Europe, and the United States, employing both qualitative and quantitative methods, such as participatory planning, semi-structured interviews, focus groups, geospatial analysis, and statistical modeling. With an academic journey that spans Social Work to Urban Planning and a personal footprint across diverse cultures, I am committed to advocating for an equitable and sustainable transportation system.
