@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Yingning Xie</title>
+  <rect width="64" height="64" rx="13" fill="#183c3e"/>
+  <path d="M13 17h8l11 16 11-16h8L36 40v9h-8v-9L13 17Z" fill="#f8f5eb"/>
+  <circle cx="51" cy="48" r="4" fill="#b9d6c9"/>
+</svg>
