@@ -331,6 +331,7 @@ footer.sticky-bottom a {
 }
 
 .home-feature h2 {
+  color: var(--site-feature-text);
   font-size: clamp(2.5rem, 4.2vw, 4rem);
   line-height: 1.02;
   margin-bottom: 1.25rem;
