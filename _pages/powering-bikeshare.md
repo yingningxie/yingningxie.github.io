@@ -6,7 +6,7 @@ description: Explore the findings from a study of Citi Bike e-bikes and classic 
 nav: false
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/powering-bikeshare.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/powering-bikeshare.css' | relative_url | bust_file_cache }}">
 
 <div id="bikeshare-story">
   <div class="bs-eyebrow">Interactive research companion · September 2022 Citi Bike trips</div>

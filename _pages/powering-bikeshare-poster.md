@@ -6,7 +6,7 @@ description: Research poster for Powering bikeshare in New York City.
 nav: false
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/powering-bikeshare.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/powering-bikeshare.css' | relative_url | bust_file_cache }}">
 
 <div id="bikeshare-story" class="bs-poster-page">
   <div class="bs-eyebrow">Xie, Smart &amp; Noland · Research poster</div>
