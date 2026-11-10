@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "Projects I lead and contribute to in transportation, health, and planning.",
+          description: "Research projects in transportation, health, and planning.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -60,7 +60,12 @@ ninja.data = [{
             },},{id: "news-currently-working-on-my-e-bike-survey-data-collection",
           title: 'Currently working on my e-bike survey data collection…',
           description: "",
-          section: "News",},{
+          section: "News",},{id: "projects-powering-bikeshare",
+          title: 'Powering bikeshare',
+          description: "Explore how Citi Bike e-bike and conventional bicycle trips differed across New York City.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/powering_bikeshare/";
+            },},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
