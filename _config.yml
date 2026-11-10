@@ -14,7 +14,7 @@ footer_text: >
   Built with <a href="https://github.com/alshedivat/al-folio">al-folio</a> and published on <a href="https://pages.github.com/">GitHub Pages</a>.
 keywords: Yingning Xie, transportation, healthcare accessibility, e-bikes, wellbeing, urban planning
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: favicon.svg # custom monogram favicon
+icon: ⚛️ # the emoji used as the favicon
 
 url: https://yingningxie.github.io # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -45,7 +45,7 @@ repo_trophies:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: false
+footer_fixed: true
 search_enabled: true
 socials_in_search: true
 posts_in_search: false
