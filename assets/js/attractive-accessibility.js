@@ -30,34 +30,38 @@
     const indicator = correlationData.indicators.find((item) => item.id === correlationIndicator.value);
     const body = story.querySelector("#aa-correlation-table tbody");
     body.replaceChildren();
-    correlationData.groups.filter((group) => measure === "index" || group.id !== "all").forEach((group) => {
-      const row = document.createElement("tr");
-      const heading = document.createElement("th");
-      heading.scope = "row";
-      heading.textContent = group.label;
-      row.append(heading);
-      modes.forEach((mode) => {
-        const data = correlationData.rows.find((item) => item.measure === measure && item.mode === mode && item.group === group.id);
-        const value = data.values[indicator.id];
-        const cell = document.createElement("td");
-        const formatted = value.rho.toFixed(2).replace("-", "−");
-        cell.dataset.rho = value.rho;
-        cell.dataset.direction = value.rho < 0 ? "negative" : "positive";
-        cell.style.setProperty("--aa-rho-strength", Math.abs(value.rho));
-        cell.textContent = formatted;
-        cell.title = `Spearman’s ρ = ${formatted}; ${significanceLabels[value.significance]}`;
-        if (value.significance) {
-          const significance = document.createElement("sup");
-          significance.textContent = value.significance;
-          cell.append(significance);
-        }
-        row.append(cell);
+    correlationData.groups
+      .filter((group) => measure === "index" || group.id !== "all")
+      .forEach((group) => {
+        const row = document.createElement("tr");
+        const heading = document.createElement("th");
+        heading.scope = "row";
+        heading.textContent = group.label;
+        row.append(heading);
+        modes.forEach((mode) => {
+          const data = correlationData.rows.find((item) => item.measure === measure && item.mode === mode && item.group === group.id);
+          const value = data.values[indicator.id];
+          const cell = document.createElement("td");
+          const formatted = value.rho.toFixed(2).replace("-", "−");
+          cell.dataset.rho = value.rho;
+          cell.dataset.direction = value.rho < 0 ? "negative" : "positive";
+          cell.style.setProperty("--aa-rho-strength", Math.abs(value.rho));
+          cell.textContent = formatted;
+          cell.title = `Spearman’s ρ = ${formatted}; ${significanceLabels[value.significance]}`;
+          if (value.significance) {
+            const significance = document.createElement("sup");
+            significance.textContent = value.significance;
+            cell.append(significance);
+          }
+          row.append(cell);
+        });
+        body.append(row);
       });
-      body.append(row);
-    });
     const isRatio = measure === "ratio";
-    story.querySelector("#aa-correlation-caption").textContent = `Spearman’s ρ: ${indicator.label} and ${isRatio ? "provider shares" : "accessibility indices"}`;
-    story.querySelector("#aa-correlation-explanation").textContent = `A positive ρ means a higher value of this population characteristic is associated with ${isRatio ? "a higher share of reachable providers with that attribute" : "a higher accessibility index"}; a negative ρ means ${isRatio ? "a lower share" : "a lower index"}.`;
+    story.querySelector("#aa-correlation-caption").textContent =
+      `Spearman’s ρ: ${indicator.label} and ${isRatio ? "provider shares" : "accessibility indices"}`;
+    story.querySelector("#aa-correlation-explanation").textContent =
+      `A positive ρ means a higher value of this population characteristic is associated with ${isRatio ? "a higher share of reachable providers with that attribute" : "a higher accessibility index"}; a negative ρ means ${isRatio ? "a lower share" : "a lower index"}.`;
   }
 
   correlationIndicator.addEventListener("change", updateCorrelations);
@@ -156,11 +160,15 @@
         outgoingImage.src = image.src;
         outgoingImage.hidden = false;
         mapFade = outgoingImage.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 1500, easing: "ease-in-out", fill: "forwards" });
-        mapFade.onfinish = () => { outgoingImage.hidden = true; };
+        mapFade.onfinish = () => {
+          outgoingImage.hidden = true;
+        };
       }
       image.src = option.dataset.src;
       image.alt = option.dataset.alt;
-      mapFigure.querySelectorAll("a").forEach((link) => { link.href = option.dataset.src; });
+      mapFigure.querySelectorAll("a").forEach((link) => {
+        link.href = option.dataset.src;
+      });
       story.querySelector("#aa-map-caption").textContent = caption;
     }
     if (image.getAttribute("src") === option.dataset.src) {
@@ -187,7 +195,9 @@
       provider.classList.toggle("is-included", selected);
       provider.querySelector(".aa-provider-status").textContent = selected
         ? "Included"
-        : reachable ? "Attribute does not match" : "Outside travel reach";
+        : reachable
+          ? "Attribute does not match"
+          : "Outside travel reach";
       return selected;
     });
     const score = included.reduce((sum, provider) => sum + 10000 / Number(provider.dataset.population), 0);
@@ -202,13 +212,31 @@
 
   exampleMode.addEventListener("change", updateExample);
   exampleAttribute.addEventListener("change", updateExample);
-  exampleMap.addEventListener("change", () => { setPlaying(false); updateMap(); });
-  story.querySelector("#aa-map-previous").addEventListener("click", () => { setPlaying(false); advanceMap(-1); });
-  story.querySelector("#aa-map-next").addEventListener("click", () => { setPlaying(false); advanceMap(1); });
+  exampleMap.addEventListener("change", () => {
+    setPlaying(false);
+    updateMap();
+  });
+  story.querySelector("#aa-map-previous").addEventListener("click", () => {
+    setPlaying(false);
+    advanceMap(-1);
+  });
+  story.querySelector("#aa-map-next").addEventListener("click", () => {
+    setPlaying(false);
+    advanceMap(1);
+  });
   playButton.addEventListener("click", () => setPlaying(!isPlaying));
-  mapFigure.addEventListener("focusin", (event) => { if (event.target !== playButton) setPlaying(false); });
-  reducedMotion.addEventListener("change", (event) => { if (event.matches) setPlaying(false); });
-  const visibility = new IntersectionObserver(([entry]) => { mapInView = entry.isIntersecting; }, { threshold: 0.15 });
+  mapFigure.addEventListener("focusin", (event) => {
+    if (event.target !== playButton) setPlaying(false);
+  });
+  reducedMotion.addEventListener("change", (event) => {
+    if (event.matches) setPlaying(false);
+  });
+  const visibility = new IntersectionObserver(
+    ([entry]) => {
+      mapInView = entry.isIntersecting;
+    },
+    { threshold: 0.15 }
+  );
   visibility.observe(mapFigure);
   updateExample();
   story.querySelector("#aa-example-controls").hidden = false;

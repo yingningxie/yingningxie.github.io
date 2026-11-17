@@ -145,6 +145,7 @@ nav: false
       <h3>Transport options shape the providers within reach</h3>
       <p>Cars provide the highest average access for every provider group. E-bikes offer greater average access than transit, including to board-certified, highly rated, and multilingual physicians. Their potential varies with cycling infrastructure and a person’s ability to ride.</p>
     </div>
+
   </section>
 
   <section class="aa-section" id="disparities" aria-labelledby="aa-equity-heading">

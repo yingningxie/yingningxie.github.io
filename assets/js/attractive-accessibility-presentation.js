@@ -38,7 +38,10 @@
       slideStatus.textContent = frame.label;
       previousSlide.disabled = selected === 0;
       nextSlide.disabled = selected === frameCount - 1;
-      slideFrame.setAttribute("aria-label", selected === frameCount - 1 ? "Return to the first presentation slide" : "Next presentation slide or step");
+      slideFrame.setAttribute(
+        "aria-label",
+        selected === frameCount - 1 ? "Return to the first presentation slide" : "Next presentation slide or step"
+      );
     };
     preview.onerror = () => {
       if (request !== slideRequest) return;
