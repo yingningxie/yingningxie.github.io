@@ -679,6 +679,7 @@ footer.sticky-bottom {
       object-fit: cover;
     }
 
+    // Keep transparent covers opaque without changing the source image.
     &.project-cover-dark img {
       background-color: #000;
     }
