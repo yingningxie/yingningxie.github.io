@@ -60,7 +60,12 @@ ninja.data = [{
             },},{id: "news-currently-working-on-my-e-bike-survey-data-collection",
           title: 'Currently working on my e-bike survey data collection…',
           description: "",
-          section: "News",},{id: "projects-powering-bikeshare",
+          section: "News",},{id: "projects-attractive-accessibility",
+          title: 'Attractive accessibility',
+          description: "Explore access to primary care physicians in New Jersey by travel mode and provider attributes.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/attractive_accessibility/";
+            },},{id: "projects-powering-bikeshare",
           title: 'Powering bikeshare',
           description: "Explore how Citi Bike e-bike and conventional bicycle trips differed across New York City.",
           section: "Projects",handler: () => {
