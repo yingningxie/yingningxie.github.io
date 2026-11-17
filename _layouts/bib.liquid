@@ -182,7 +182,15 @@
       {{ periodical | strip }}
     </div>
     <div class="periodical">
-      {{ entry.note | strip }}
+      {% if entry.presentation_url %}
+        {% assign presentation_note_parts = entry.note | split: ';' %}
+        <a href="{{ entry.presentation_url | relative_url }}">{{ presentation_note_parts.first | strip }}</a>
+        {%- for part in presentation_note_parts offset: 1 -%}
+          ; {{ part | strip -}}
+        {%- endfor %}
+      {% else %}
+        {{ entry.note | strip }}
+      {% endif %}
     </div>
 
     <!-- Links/Buttons -->
@@ -358,7 +366,7 @@
       <div class="bibtex hidden">
         {% highlight bibtex %}
         {{- entry.bibtex | hideCustomBibtex -}}
-        {% endhighlight %}
+      {% endhighlight %}
       </div>
     {% endif %}
 

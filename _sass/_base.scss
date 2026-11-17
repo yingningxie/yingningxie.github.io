@@ -679,7 +679,7 @@ footer.sticky-bottom {
       object-fit: cover;
     }
 
-    img[src$="/proj-2-front.png"] {
+    &.project-cover-dark img {
       background-color: #000;
     }
 
