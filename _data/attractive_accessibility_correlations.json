@@ -1,0 +1,891 @@
+{
+  "source": "Xie and Smart (2025), Table 2",
+  "n": 2148,
+  "indicators": [
+    {
+      "id": "income",
+      "label": "Median household income"
+    },
+    {
+      "id": "uninsured",
+      "label": "Residents without health insurance (%)"
+    },
+    {
+      "id": "limitedEnglish",
+      "label": "Residents speaking limited English (%)"
+    },
+    {
+      "id": "spanishHome",
+      "label": "Residents speaking Spanish at home (%)"
+    },
+    {
+      "id": "noVehicle",
+      "label": "Households without a vehicle (%)"
+    },
+    {
+      "id": "vulnerability",
+      "label": "Social Vulnerability Index"
+    }
+  ],
+  "groups": [
+    {
+      "id": "all",
+      "label": "All primary care physicians"
+    },
+    {
+      "id": "certified",
+      "label": "Board-certified physicians"
+    },
+    {
+      "id": "rated",
+      "label": "Highly rated physicians (≥4)"
+    },
+    {
+      "id": "nonEnglish",
+      "label": "Physicians speaking a non-English language"
+    },
+    {
+      "id": "spanish",
+      "label": "Spanish-speaking physicians"
+    }
+  ],
+  "rows": [
+    {
+      "measure": "index",
+      "mode": "car",
+      "group": "all",
+      "values": {
+        "income": {
+          "rho": -0.27,
+          "significance": "***"
+        },
+        "uninsured": {
+          "rho": 0.28,
+          "significance": "***"
+        },
+        "limitedEnglish": {
+          "rho": 0.31,
+          "significance": "***"
+        },
+        "spanishHome": {
+          "rho": 0.28,
+          "significance": "***"
+        },
+        "noVehicle": {
+          "rho": 0.39,
+          "significance": "***"
+        },
+        "vulnerability": {
+          "rho": 0.34,
+          "significance": "***"
+        }
+      }
+    },
+    {
+      "measure": "index",
+      "mode": "transit",
+      "group": "all",
+      "values": {
+        "income": {
+          "rho": -0.35,
+          "significance": "***"
+        },
+        "uninsured": {
+          "rho": 0.34,
+          "significance": "***"
+        },
+        "limitedEnglish": {
+          "rho": 0.35,
+          "significance": "***"
+        },
+        "spanishHome": {
+          "rho": 0.35,
+          "significance": "***"
+        },
+        "noVehicle": {
+          "rho": 0.49,
+          "significance": "***"
+        },
+        "vulnerability": {
+          "rho": 0.43,
+          "significance": "***"
+        }
+      }
+    },
+    {
+      "measure": "index",
+      "mode": "ebike",
+      "group": "all",
+      "values": {
+        "income": {
+          "rho": -0.04,
+          "significance": ""
+        },
+        "uninsured": {
+          "rho": 0.01,
+          "significance": ""
+        },
+        "limitedEnglish": {
+          "rho": 0.04,
+          "significance": "a"
+        },
+        "spanishHome": {
+          "rho": -0.01,
+          "significance": ""
+        },
+        "noVehicle": {
+          "rho": -0.02,
+          "significance": ""
+        },
+        "vulnerability": {
+          "rho": 0.07,
+          "significance": "**"
+        }
+      }
+    },
+    {
+      "measure": "index",
+      "mode": "car",
+      "group": "certified",
+      "values": {
+        "income": {
+          "rho": -0.26,
+          "significance": "***"
+        },
+        "uninsured": {
+          "rho": 0.25,
+          "significance": "***"
+        },
+        "limitedEnglish": {
+          "rho": 0.27,
+          "significance": "***"
+        },
+        "spanishHome": {
+          "rho": 0.24,
+          "significance": "***"
+        },
+        "noVehicle": {
+          "rho": 0.35,
+          "significance": "***"
+        },
+        "vulnerability": {
+          "rho": 0.31,
+          "significance": "***"
+        }
+      }
+    },
+    {
+      "measure": "index",
+      "mode": "car",
+      "group": "rated",
+      "values": {
+        "income": {
+          "rho": -0.24,
+          "significance": "***"
+        },
+        "uninsured": {
+          "rho": 0.22,
+          "significance": "***"
+        },
+        "limitedEnglish": {
+          "rho": 0.22,
+          "significance": "***"
+        },
+        "spanishHome": {
+          "rho": 0.19,
+          "significance": "***"
+        },
+        "noVehicle": {
+          "rho": 0.3,
+          "significance": "***"
+        },
+        "vulnerability": {
+          "rho": 0.27,
+          "significance": "***"
+        }
+      }
+    },
+    {
+      "measure": "index",
+      "mode": "car",
+      "group": "nonEnglish",
+      "values": {
+        "income": {
+          "rho": -0.25,
+          "significance": "***"
+        },
+        "uninsured": {
+          "rho": 0.38,
+          "significance": "***"
+        },
+        "limitedEnglish": {
+          "rho": 0.49,
+          "significance": "***"
+        },
+        "spanishHome": {
+          "rho": 0.46,
+          "significance": "***"
+        },
+        "noVehicle": {
+          "rho": 0.49,
+          "significance": "***"
+        },
+        "vulnerability": {
+          "rho": 0.42,
+          "significance": "***"
+        }
+      }
+    },
+    {
+      "measure": "index",
+      "mode": "car",
+      "group": "spanish",
+      "values": {
+        "income": {
+          "rho": -0.24,
+          "significance": "***"
+        },
+        "uninsured": {
+          "rho": 0.38,
+          "significance": "***"
+        },
+        "limitedEnglish": {
+          "rho": 0.49,
+          "significance": "***"
+        },
+        "spanishHome": {
+          "rho": 0.47,
+          "significance": "***"
+        },
+        "noVehicle": {
+          "rho": 0.49,
+          "significance": "***"
+        },
+        "vulnerability": {
+          "rho": 0.42,
+          "significance": "***"
+        }
+      }
+    },
+    {
+      "measure": "index",
+      "mode": "transit",
+      "group": "certified",
+      "values": {
+        "income": {
+          "rho": -0.32,
+          "significance": "***"
+        },
+        "uninsured": {
+          "rho": 0.32,
+          "significance": "***"
+        },
+        "limitedEnglish": {
+          "rho": 0.33,
+          "significance": "***"
+        },
+        "spanishHome": {
+          "rho": 0.33,
+          "significance": "***"
+        },
+        "noVehicle": {
+          "rho": 0.46,
+          "significance": "***"
+        },
+        "vulnerability": {
+          "rho": 0.41,
+          "significance": "***"
+        }
+      }
+    },
+    {
+      "measure": "index",
+      "mode": "transit",
+      "group": "rated",
+      "values": {
+        "income": {
+          "rho": -0.3,
+          "significance": "***"
+        },
+        "uninsured": {
+          "rho": 0.29,
+          "significance": "***"
+        },
+        "limitedEnglish": {
+          "rho": 0.3,
+          "significance": "***"
+        },
+        "spanishHome": {
+          "rho": 0.3,
+          "significance": "***"
+        },
+        "noVehicle": {
+          "rho": 0.43,
+          "significance": "***"
+        },
+        "vulnerability": {
+          "rho": 0.37,
+          "significance": "***"
+        }
+      }
+    },
+    {
+      "measure": "index",
+      "mode": "transit",
+      "group": "nonEnglish",
+      "values": {
+        "income": {
+          "rho": -0.37,
+          "significance": "***"
+        },
+        "uninsured": {
+          "rho": 0.39,
+          "significance": "***"
+        },
+        "limitedEnglish": {
+          "rho": 0.43,
+          "significance": "***"
+        },
+        "spanishHome": {
+          "rho": 0.43,
+          "significance": "***"
+        },
+        "noVehicle": {
+          "rho": 0.53,
+          "significance": "***"
+        },
+        "vulnerability": {
+          "rho": 0.48,
+          "significance": "***"
+        }
+      }
+    },
+    {
+      "measure": "index",
+      "mode": "transit",
+      "group": "spanish",
+      "values": {
+        "income": {
+          "rho": -0.36,
+          "significance": "***"
+        },
+        "uninsured": {
+          "rho": 0.41,
+          "significance": "***"
+        },
+        "limitedEnglish": {
+          "rho": 0.46,
+          "significance": "***"
+        },
+        "spanishHome": {
+          "rho": 0.47,
+          "significance": "***"
+        },
+        "noVehicle": {
+          "rho": 0.54,
+          "significance": "***"
+        },
+        "vulnerability": {
+          "rho": 0.49,
+          "significance": "***"
+        }
+      }
+    },
+    {
+      "measure": "index",
+      "mode": "ebike",
+      "group": "certified",
+      "values": {
+        "income": {
+          "rho": -0.01,
+          "significance": ""
+        },
+        "uninsured": {
+          "rho": -0.03,
+          "significance": ""
+        },
+        "limitedEnglish": {
+          "rho": 0.02,
+          "significance": ""
+        },
+        "spanishHome": {
+          "rho": -0.04,
+          "significance": ""
+        },
+        "noVehicle": {
+          "rho": -0.05,
+          "significance": "a"
+        },
+        "vulnerability": {
+          "rho": 0.04,
+          "significance": ""
+        }
+      }
+    },
+    {
+      "measure": "index",
+      "mode": "ebike",
+      "group": "rated",
+      "values": {
+        "income": {
+          "rho": 0.02,
+          "significance": ""
+        },
+        "uninsured": {
+          "rho": -0.06,
+          "significance": "a"
+        },
+        "limitedEnglish": {
+          "rho": -0.03,
+          "significance": ""
+        },
+        "spanishHome": {
+          "rho": -0.08,
+          "significance": ""
+        },
+        "noVehicle": {
+          "rho": -0.08,
+          "significance": "***"
+        },
+        "vulnerability": {
+          "rho": -0.01,
+          "significance": ""
+        }
+      }
+    },
+    {
+      "measure": "index",
+      "mode": "ebike",
+      "group": "nonEnglish",
+      "values": {
+        "income": {
+          "rho": -0.08,
+          "significance": "**"
+        },
+        "uninsured": {
+          "rho": 0.1,
+          "significance": "***"
+        },
+        "limitedEnglish": {
+          "rho": 0.21,
+          "significance": "***"
+        },
+        "spanishHome": {
+          "rho": 0.15,
+          "significance": "***"
+        },
+        "noVehicle": {
+          "rho": 0.08,
+          "significance": "***"
+        },
+        "vulnerability": {
+          "rho": 0.17,
+          "significance": "***"
+        }
+      }
+    },
+    {
+      "measure": "index",
+      "mode": "ebike",
+      "group": "spanish",
+      "values": {
+        "income": {
+          "rho": -0.1,
+          "significance": "***"
+        },
+        "uninsured": {
+          "rho": 0.18,
+          "significance": "***"
+        },
+        "limitedEnglish": {
+          "rho": 0.28,
+          "significance": "***"
+        },
+        "spanishHome": {
+          "rho": 0.25,
+          "significance": "***"
+        },
+        "noVehicle": {
+          "rho": 0.15,
+          "significance": "***"
+        },
+        "vulnerability": {
+          "rho": 0.24,
+          "significance": "***"
+        }
+      }
+    },
+    {
+      "measure": "ratio",
+      "mode": "car",
+      "group": "certified",
+      "values": {
+        "income": {
+          "rho": 0.02,
+          "significance": ""
+        },
+        "uninsured": {
+          "rho": -0.14,
+          "significance": "***"
+        },
+        "limitedEnglish": {
+          "rho": -0.21,
+          "significance": "***"
+        },
+        "spanishHome": {
+          "rho": -0.22,
+          "significance": "***"
+        },
+        "noVehicle": {
+          "rho": -0.17,
+          "significance": "***"
+        },
+        "vulnerability": {
+          "rho": -0.09,
+          "significance": "***"
+        }
+      }
+    },
+    {
+      "measure": "ratio",
+      "mode": "car",
+      "group": "rated",
+      "values": {
+        "income": {
+          "rho": 0.23,
+          "significance": "***"
+        },
+        "uninsured": {
+          "rho": -0.3,
+          "significance": "***"
+        },
+        "limitedEnglish": {
+          "rho": -0.39,
+          "significance": "***"
+        },
+        "spanishHome": {
+          "rho": -0.38,
+          "significance": "***"
+        },
+        "noVehicle": {
+          "rho": -0.39,
+          "significance": "***"
+        },
+        "vulnerability": {
+          "rho": -0.36,
+          "significance": "***"
+        }
+      }
+    },
+    {
+      "measure": "ratio",
+      "mode": "car",
+      "group": "nonEnglish",
+      "values": {
+        "income": {
+          "rho": 0.01,
+          "significance": ""
+        },
+        "uninsured": {
+          "rho": 0.17,
+          "significance": "***"
+        },
+        "limitedEnglish": {
+          "rho": 0.34,
+          "significance": "***"
+        },
+        "spanishHome": {
+          "rho": 0.3,
+          "significance": "***"
+        },
+        "noVehicle": {
+          "rho": 0.19,
+          "significance": "***"
+        },
+        "vulnerability": {
+          "rho": 0.18,
+          "significance": "***"
+        }
+      }
+    },
+    {
+      "measure": "ratio",
+      "mode": "car",
+      "group": "spanish",
+      "values": {
+        "income": {
+          "rho": -0.02,
+          "significance": ""
+        },
+        "uninsured": {
+          "rho": 0.24,
+          "significance": "***"
+        },
+        "limitedEnglish": {
+          "rho": 0.38,
+          "significance": "***"
+        },
+        "spanishHome": {
+          "rho": 0.38,
+          "significance": "***"
+        },
+        "noVehicle": {
+          "rho": 0.26,
+          "significance": "***"
+        },
+        "vulnerability": {
+          "rho": 0.24,
+          "significance": "***"
+        }
+      }
+    },
+    {
+      "measure": "ratio",
+      "mode": "transit",
+      "group": "certified",
+      "values": {
+        "income": {
+          "rho": 0.13,
+          "significance": "***"
+        },
+        "uninsured": {
+          "rho": -0.17,
+          "significance": "***"
+        },
+        "limitedEnglish": {
+          "rho": -0.25,
+          "significance": "***"
+        },
+        "spanishHome": {
+          "rho": -0.09,
+          "significance": "***"
+        },
+        "noVehicle": {
+          "rho": -0.2,
+          "significance": "***"
+        },
+        "vulnerability": {
+          "rho": -0.2,
+          "significance": "***"
+        }
+      }
+    },
+    {
+      "measure": "ratio",
+      "mode": "transit",
+      "group": "rated",
+      "values": {
+        "income": {
+          "rho": 0.26,
+          "significance": "***"
+        },
+        "uninsured": {
+          "rho": -0.29,
+          "significance": "***"
+        },
+        "limitedEnglish": {
+          "rho": -0.35,
+          "significance": "***"
+        },
+        "spanishHome": {
+          "rho": -0.26,
+          "significance": "***"
+        },
+        "noVehicle": {
+          "rho": -0.37,
+          "significance": "***"
+        },
+        "vulnerability": {
+          "rho": -0.36,
+          "significance": "***"
+        }
+      }
+    },
+    {
+      "measure": "ratio",
+      "mode": "transit",
+      "group": "nonEnglish",
+      "values": {
+        "income": {
+          "rho": 0.04,
+          "significance": ""
+        },
+        "uninsured": {
+          "rho": 0.02,
+          "significance": ""
+        },
+        "limitedEnglish": {
+          "rho": 0.07,
+          "significance": "**"
+        },
+        "spanishHome": {
+          "rho": 0.28,
+          "significance": "***"
+        },
+        "noVehicle": {
+          "rho": -0.08,
+          "significance": "***"
+        },
+        "vulnerability": {
+          "rho": -0.03,
+          "significance": ""
+        }
+      }
+    },
+    {
+      "measure": "ratio",
+      "mode": "transit",
+      "group": "spanish",
+      "values": {
+        "income": {
+          "rho": -0.01,
+          "significance": ""
+        },
+        "uninsured": {
+          "rho": 0.1,
+          "significance": "***"
+        },
+        "limitedEnglish": {
+          "rho": 0.11,
+          "significance": "***"
+        },
+        "spanishHome": {
+          "rho": 0.38,
+          "significance": "***"
+        },
+        "noVehicle": {
+          "rho": 0.02,
+          "significance": ""
+        },
+        "vulnerability": {
+          "rho": 0.05,
+          "significance": "a"
+        }
+      }
+    },
+    {
+      "measure": "ratio",
+      "mode": "ebike",
+      "group": "certified",
+      "values": {
+        "income": {
+          "rho": 0.1,
+          "significance": "***"
+        },
+        "uninsured": {
+          "rho": -0.19,
+          "significance": "***"
+        },
+        "limitedEnglish": {
+          "rho": -0.18,
+          "significance": "***"
+        },
+        "spanishHome": {
+          "rho": -0.23,
+          "significance": "***"
+        },
+        "noVehicle": {
+          "rho": -0.3,
+          "significance": "***"
+        },
+        "vulnerability": {
+          "rho": -0.18,
+          "significance": "***"
+        }
+      }
+    },
+    {
+      "measure": "ratio",
+      "mode": "ebike",
+      "group": "rated",
+      "values": {
+        "income": {
+          "rho": 0.21,
+          "significance": "***"
+        },
+        "uninsured": {
+          "rho": -0.28,
+          "significance": "***"
+        },
+        "limitedEnglish": {
+          "rho": -0.34,
+          "significance": "***"
+        },
+        "spanishHome": {
+          "rho": -0.34,
+          "significance": "***"
+        },
+        "noVehicle": {
+          "rho": -0.35,
+          "significance": "***"
+        },
+        "vulnerability": {
+          "rho": -0.33,
+          "significance": "***"
+        }
+      }
+    },
+    {
+      "measure": "ratio",
+      "mode": "ebike",
+      "group": "nonEnglish",
+      "values": {
+        "income": {
+          "rho": -0.04,
+          "significance": ""
+        },
+        "uninsured": {
+          "rho": 0.18,
+          "significance": "***"
+        },
+        "limitedEnglish": {
+          "rho": 0.34,
+          "significance": "***"
+        },
+        "spanishHome": {
+          "rho": 0.35,
+          "significance": "***"
+        },
+        "noVehicle": {
+          "rho": 0.25,
+          "significance": "***"
+        },
+        "vulnerability": {
+          "rho": 0.18,
+          "significance": "***"
+        }
+      }
+    },
+    {
+      "measure": "ratio",
+      "mode": "ebike",
+      "group": "spanish",
+      "values": {
+        "income": {
+          "rho": -0.06,
+          "significance": "**"
+        },
+        "uninsured": {
+          "rho": 0.27,
+          "significance": "***"
+        },
+        "limitedEnglish": {
+          "rho": 0.39,
+          "significance": "***"
+        },
+        "spanishHome": {
+          "rho": 0.42,
+          "significance": "***"
+        },
+        "noVehicle": {
+          "rho": 0.33,
+          "significance": "***"
+        },
+        "vulnerability": {
+          "rho": 0.26,
+          "significance": "***"
+        }
+      }
+    }
+  ]
+}

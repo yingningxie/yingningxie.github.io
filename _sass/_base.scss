@@ -675,6 +675,16 @@ footer.sticky-bottom {
   .card {
     img {
       width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+
+    img[src$="/proj-2-front.png"] {
+      background-color: #000;
+    }
+
+    img[src$="/citbike.png"] {
+      object-position: 10% center;
     }
   }
 
