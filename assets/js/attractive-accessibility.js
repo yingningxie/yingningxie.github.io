@@ -58,10 +58,13 @@
         body.append(row);
       });
     const isRatio = measure === "ratio";
-    story.querySelector("#aa-correlation-caption").textContent =
-      `Spearman’s ρ: ${indicator.label} and ${isRatio ? "provider shares" : "accessibility indices"}`;
+    story.querySelector("#aa-correlation-caption").textContent = `Spearman’s ρ: ${indicator.label} and ${
+      isRatio ? "provider shares" : "accessibility indices"
+    }`;
     story.querySelector("#aa-correlation-explanation").textContent =
-      `A positive ρ means a higher value of this population characteristic is associated with ${isRatio ? "a higher share of reachable providers with that attribute" : "a higher accessibility index"}; a negative ρ means ${isRatio ? "a lower share" : "a lower index"}.`;
+      `A positive ρ means a higher value of this population characteristic is associated with ${
+        isRatio ? "a higher share of reachable providers with that attribute" : "a higher accessibility index"
+      }; a negative ρ means ${isRatio ? "a lower share" : "a lower index"}.`;
   }
 
   correlationIndicator.addEventListener("change", updateCorrelations);
@@ -202,8 +205,9 @@
     });
     const score = included.reduce((sum, provider) => sum + 10000 / Number(provider.dataset.population), 0);
     const value = score.toFixed(5);
-    story.querySelector("#aa-example-summary").textContent =
-      `By ${modeLabels[exampleMode.value]}, ${included.length} of the 3 sample doctors are reachable and match the selected attribute.`;
+    story.querySelector("#aa-example-summary").textContent = `By ${modeLabels[exampleMode.value]}, ${
+      included.length
+    } of the 3 sample doctors are reachable and match the selected attribute.`;
     story.querySelector("#aa-example-score").textContent = value;
     story.querySelector("#aa-example-formula").textContent = included.length
       ? `(${included.map((provider) => `1 / ${Number(provider.dataset.population).toLocaleString("en-US")}`).join(" + ")}) × 10,000 = ${value}`
